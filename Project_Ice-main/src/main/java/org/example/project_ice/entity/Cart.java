@@ -1,19 +1,14 @@
-package org.example.project_ice;
+package org.example.project_ice.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import org.springframework.data.annotation.Id;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Date;
+
 import java.util.List;
 
 @Entity
-@Table(name = "history")
-public class History {
-
-    @jakarta.persistence.Id
+@Table(name = "cart")
+public class Cart {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -25,34 +20,31 @@ public class History {
 
     @ManyToMany
     @JoinTable(
-            name = "history_products",
-            joinColumns = @JoinColumn(name = "history_id"),
+            name = "cart_products",
+            joinColumns = @JoinColumn(name = "cart_id"),
             inverseJoinColumns = @JoinColumn(name = "product_id")
     )
     private List<Product> products;
 
     private int numberOfProducts;
 
-    private LocalDate date;
-
-    public History() {
+    public Cart() {
     }
 
-    public History(Long id, User user, int total, List<Product> products, int numberOfProducts, LocalDate date) {
+    public Cart(Long id, User user, int total, List<Product> products, int numberOfProducts) {
         this.id = id;
         this.user = user;
         this.total = total;
         this.products = products;
         this.numberOfProducts = numberOfProducts;
-        this.date = date;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public User getUser() {
@@ -87,11 +79,5 @@ public class History {
         this.numberOfProducts = numberOfProducts;
     }
 
-    public LocalDate getDate() {
-        return date;
-    }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
 }

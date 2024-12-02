@@ -1,5 +1,7 @@
-package org.example.project_ice;
+package org.example.project_ice.repository;
 
+import org.example.project_ice.Category;
+import org.example.project_ice.entity.Task;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;

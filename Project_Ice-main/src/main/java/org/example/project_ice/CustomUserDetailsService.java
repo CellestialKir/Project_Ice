@@ -1,4 +1,6 @@
 package org.example.project_ice;
+import org.example.project_ice.entity.User;
+import org.example.project_ice.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

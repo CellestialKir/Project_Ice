@@ -1,5 +1,8 @@
-package org.example.project_ice;
+package org.example.project_ice.entity;
 import jakarta.persistence.*;
+import org.example.project_ice.entity.Cart;
+import org.example.project_ice.entity.History;
+
 import java.time.LocalDateTime;
 import java.util.List;
 

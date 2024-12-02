@@ -1,4 +1,6 @@
-package org.example.project_ice;
+package org.example.project_ice.controllers;
+import org.example.project_ice.entity.User;
+import org.example.project_ice.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;

@@ -1,7 +1,7 @@
-package org.example.project_ice;
+package org.example.project_ice.entity;
 
 import jakarta.persistence.*;
-import org.springframework.data.annotation.Id;
+
 
 @Entity
 @Table(name = "products")

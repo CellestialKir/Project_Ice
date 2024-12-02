@@ -1,5 +1,12 @@
-package org.example.project_ice;
+package org.example.project_ice.controllers;
 import jakarta.validation.Valid;
+import org.example.project_ice.Category;
+import org.example.project_ice.NotificationService;
+import org.example.project_ice.entity.Task;
+import org.example.project_ice.entity.User;
+import org.example.project_ice.repository.CategoryRepo;
+import org.example.project_ice.repository.TaskRepo;
+import org.example.project_ice.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -12,7 +19,6 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.Optional;
 
 @Controller()

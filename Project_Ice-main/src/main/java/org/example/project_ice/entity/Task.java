@@ -1,5 +1,8 @@
-package org.example.project_ice;
+package org.example.project_ice.entity;
 import jakarta.persistence.*;
+import org.example.project_ice.Category;
+import org.example.project_ice.entity.User;
+
 import java.time.LocalDate;
 
 @Entity

@@ -220,8 +220,11 @@
     background: rgba(203, 197, 236, 1);
 }
 
-
-
 .container-fluid{
     justify-content: center;
+}
+
+.product-details__add-button:hover{
+    background-color: rgba(175, 155, 98, 0.98) !important;
+    cursor: pointer;
 }

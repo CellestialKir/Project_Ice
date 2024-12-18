@@ -1,8 +1,10 @@
 package org.example.project_ice.controllers;
 import org.example.project_ice.entity.User;
+import org.example.project_ice.repository.ProductRepository;
 import org.example.project_ice.repository.UserRepo;
 import org.example.project_ice.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +21,7 @@ public class UserController {
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    private ProductService productService;
+    private ProductRepository prodrepo;
 
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
@@ -42,7 +44,11 @@ public class UserController {
 
     @GetMapping("/FrameOne")
     public String frameOne(Model model) {
-        model.addAttribute("products", productService.getAllProducts());
+
+        Sort sortOption = Sort.by("availableAmount");
+        sortOption.ascending();
+
+        model.addAttribute("products", prodrepo.findAll(sortOption));
         return "FrameOne";
     }
 

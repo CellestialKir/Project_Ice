@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8"/>
         <title>Your Cart</title>
@@ -12,12 +13,12 @@
             style="width: 0px; height: 0px; display: none"
         />
         
-        <link rel="stylesheet" type="text/css" href="./css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/font.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/components.css"/>
-        <link rel="stylesheet" type="text/css" href="./css/FrameTwo.css"/>
-        <link rel="stylesheet" href="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/font.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/components.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/FrameTwo.css}"/>
+        <link rel="stylesheet" th:href="@{css/bootstrap-5.3.3-dist/css/bootstrap.css}" />
     </head>
 
     <body>
@@ -33,26 +34,28 @@
 
                 <div class="header__user-row logout_btn">
                     <img src="public/images/user_ico.png" alt="User Icon" class="header__user-icon"/>
-                    <p style="font-family: Comic Neue;" class="ui text size-textlg">Log in/Log out</p>
+                    <form th:action="@{/logout}" method="post">
+                        <button style="font-family: Comic Neue;" class="ui text size-textlg" type="submit">Log in/Log out</button>
+                    </form>
                 </div>
             </div>
 
             <div class="header__nav-row">
                 <ul class="header__nav-menu">
                     <li>
-                        <a href="#" class="menu-item">
+                        <a th:href="@{/FrameOne}" class="menu-item">
                         <p style="font-family: Darker Grotesque" class="header__menu-item ui text size-textxl">Menu</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="menu-item">
+                        <a th:href="@{/cart}" class="menu-item">
                         <p style="font-family: Darker Grotesque" class="ui text size-textxl">Your cart</p>
                         </a>
                     </li>
 
                     <li class=""> 
-                        <a href="#" class="menu-item">
+                        <a th:href="@{/profile}" class="menu-item">
                         <p style="font-family: Darker Grotesque" class="ui text size-textxl">Profile</p>
                         </a>
                     </li>
@@ -78,74 +81,40 @@
                                 <div class="section__image-row">
 
                                     <!-- блок для отображения контента -->
-                                    <div class="row_for_info">
-                                        <img src="public/images/ice_sample.png" alt="Ice Cream Image" class="section__image" />
+                                    <div class="row_for_info" th:each="product : ${cart}">
+                                        <img th:src="'public/images/' + ${product.product.image}" alt="Ice Cream Image" class="section__image" />
                                         <div class="section__details">
                                             <div class="section__details-row">
                                                 <div class="section__details-column">
-                                                    <p class="section__name ui text size-text3x1">Name 1</p>
-                                                    <p class="section__description ui text size-textlg">
-                                                        Short info about ice cream in one/ two rows
-                                                    </p>
+                                                    <p class="section__name ui text size-text3x1" th:text="${product.product.name}"></p>
+                                                    <p class="section__description ui text size-textlg" th:text="${product.product.description}"></p>
                                                 </div>
                                                 <div class="section__price-row">
                                                     <div class="section__quantity-row">
                                                         <div class="section__quantity-stack">
-                                                            <div class="section__quantity-view--decrement">
+                                                            <div class="section__quantity-view--decrement" data-action="decrement">
                                                                 <p class="section__quantity-symbol--decrement ui text size-text3x1">-</p>
                                                             </div>
                                                         </div>
-                                                        <p class="section__quantity-number ui text size-textlg">1</p>
-                                                        <div class="section__quantity-stack--increment">
-                                                            <div class="section__quantity-view--increment">
+
+                                                        <p class="section__quantity-number ui text size-textlg" th:text="${product.numberOfProducts}" data-quantity="number">1</p>
+                                                        <div class="section__quantity-stack--increment" data-action="increment">
+                                                            <div class="section__quantity-view--increment"  >
                                                                 <p class="section__quantity-symbol--increment ui text size-text3x1">+</p>
-                                                            </div>  
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <p class="section__description ui text size-text2x1">9,00 Kč</p>
+                                                    <p class="section__description ui text size-text2x1 margin-bottom" th:text="${product.total} + 'Kč'" th:data-price="${product.product.price}"></p>
+                                                    <form th:action="@{/delete/{productId}(productId=${product.id})}" method="post">
+                                                        <button type="submit" class="btn btn-outline-secondary">Delete</button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!-- блок для отображения контента -->
-                                    
-                                    
-                                    <!-- блок для отображения контента -->
-                                    <div class="row_for_info">
-                                        <img src="public/images/ice_sample.png" alt="Ice Cream Image" class="section__image" />
-                                        <div class="section__details">
-                                            <div class="section__details-row">
-                                                <div class="section__details-column">
-                                                    <p class="section__name ui text size-text3x1">Name 1</p>
-                                                    <p class="section__description ui text size-textlg">
-                                                        Short info about ice cream in one/ two rows
-                                                    </p>
-                                                </div>
-                                                <div class="section__price-row">
-                                                    <div class="section__quantity-row">
-                                                        <div class="section__quantity-stack">
-                                                            <div class="section__quantity-view--decrement">
-                                                                <p class="section__quantity-symbol--decrement ui text size-text3x1">-</p>
-                                                            </div>
-                                                        </div>
-                                                        <p class="section__quantity-number ui text size-textlg">1</p>
-                                                        <div class="section__quantity-stack--increment">
-                                                            <div class="section__quantity-view--increment">
-                                                                <p class="section__quantity-symbol--increment ui text size-text3x1">+</p>
-                                                            </div>  
-                                                        </div>
-                                                    </div>
-                                                    <p class="section__delivery-method--pickup ui text size-text2x1">9,00 Kč</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- блок для отображения контента -->
-
-
                                 </div>
                             </div>
-
                             <div>  
                             <div class="section__delivery-row">
                                 <div class="section__delivery-column">
@@ -165,18 +134,19 @@
                         </div>
                     </div>
 
+
+
                     <!-- order summary section -->
                     <div class="section__info-column">
                         <div class="section__info-column-inner">
                             <div class="section__info-column-inner--address">
                                 <h2 class="section__address-title ui heading size-headingxs">Select delivery address</h2>
                                 <div class="section__products-row">
-                                    <h3 class="section__products-quantity ui heading size-headingxs">Products: 1pc</h3>
-                                    <p class="section__products-price ui text size-textmd">9,00 Kč</p>
+                                    <h3 class="section__products-quantity ui heading size-headingxs" th:text="'Products: ' + ${fullAmount} + 'pc'"></h3>
                                 </div>
                                 <div class="section__total-row">
                                     <h4 class="ui heading size-headinglg">Total</h4>
-                                    <h5 class="ui heading size-headingmd">9,00 Kč</h5>
+                                    <h5 class="ui heading size-headingmd" th:text="${fullTotal} + 'Kč'"></h5>
                                 </div>
                                 <div class="section__order-stack">
                                     <div class="section__order-view"></div>
@@ -186,53 +156,104 @@
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
+            <br>
+            <footer class="panel-footer" >
+                <div class="container">
+                    <div class="row">
+                        <section id="hours" class="col-sm-4">
+                            <span>Hours:</span><br>
+                            Daily from 8:00 to 20:00<br><br>
+                            <span>Phone:</span><br>
+                            987-654-321
+                        </section>
+
+                        <section id="address" class="col-sm-4">
+                            <span>Address:</span><br>
+                            500 Terry Francine St.<br>
+                            San Francisco,<br>
+                            CA 94158<br>
+                        </section>
+
+                        <section id="testimonials" class="col-sm-4">
+                            <p id="social">Social's</p>
+
+                            <a href="https://www.facebook.com/wix" id="social_links">
+                                <img src="public/images/facebook.png" alt="instagram" id="foot_img_inst">
+                                <div href="" id="foot_text"><b>FACEBOOK &nbsp &nbsp</b></div>
+                            </a>
+
+                            <a href="https://www.twitter.com/wix" id="social_links" class="what">
+                                <img src="public/images/instagram.png" alt="instagram" id="foot_img_inst">
+                                <div href="" id="foot_text"><b>TWITTER &nbsp &nbsp &nbsp </b></div>
+                            </a>
+
+                            <a href="https://www.instagram.com/wix" id="social_links">
+                                <img src="public/images/twit.png" alt="instagram" id="foot_img_inst">
+                                <div href="" id="foot_text"><b>INSTAGRAM</b></div>
+                            </a>
+
+                        </section>
+                    </div>
+                    <hr class="visible-xs">
+                    <div class="text-center">&copy; 2035 by Gelato. Powered and secured by Wix</div>
+                </div>
+            </footer>
     </div>
 </div>
 </div>
 
-<footer class="panel-footer">
-    <div class="container">
-      <div class="row">
-        <section id="hours" class="col-sm-4">
-          <span>Hours:</span><br>
-          Daily from 8:00 to 20:00<br><br>
-          <span>Phone:</span><br>
-          987-654-321
-        </section>
 
-        <section id="address" class="col-sm-4">
-          <span>Address:</span><br>
-          500 Terry Francine St.<br>
-          San Francisco,<br>
-          CA 94158<br>
-        </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cartContainer = document.querySelector('.stackview');
 
-        <section id="testimonials" class="col-sm-4">
-          <p id="social">Social's</p>
+            cartContainer.addEventListener('click', function (event) {
 
-          <a href="https://www.facebook.com/wix" id="social_links">
-            <img src="public/images/facebook.png" alt="instagram" id="foot_img_inst">
-            <div href="" id="foot_text"><b>FACEBOOK &nbsp &nbsp</b></div>
-          </a>
+                const target = event.target.closest('[data-action]');
+                if (!target) return;
 
-          <a href="https://www.twitter.com/wix" id="social_links" class="what">
-            <img src="public/images/instagram.png" alt="instagram" id="foot_img_inst">
-            <div href="" id="foot_text"><b>TWITTER &nbsp &nbsp &nbsp </b></div>
-          </a>
 
-          <a href="https://www.instagram.com/wix" id="social_links">
-            <img src="public/images/twit.png" alt="instagram" id="foot_img_inst">
-            <div href="" id="foot_text"><b>INSTAGRAM</b></div>
-          </a>
+                const quantityElement = target.closest('.section__quantity-row').querySelector('[data-quantity="number"]');
+                const priceElement = target.closest('.section__details-row').querySelector('[data-price]');
+                const totalPriceElement = target.closest('.section__details-row').querySelector('.section__description.ui.text.size-text2x1');
 
-        </section>
-      </div>
-      <hr class="visible-xs">
-      <div class="text-center">&copy; 2035 by Gelato. Powered and secured by Wix</div>
-    </div>
-  </footer>
+                let quantity = parseInt(quantityElement.innerText);
+                const pricePerItem = parseInt(priceElement.dataset.price);
+
+
+                if (target.dataset.action === "increment") {
+                    quantity++;
+                } else if (target.dataset.action === "decrement" && quantity > 1) {
+                    quantity--;
+                }
+
+
+                quantityElement.innerText = quantity;
+
+
+                totalPriceElement.innerText = (pricePerItem * quantity) + " Kč";
+
+
+                updateCartTotal();
+            });
+
+            function updateCartTotal() {
+                let total = 0;
+
+
+                document.querySelectorAll('.section__details-row').forEach(row => {
+                    const priceText = row.querySelector('.section__description.ui.text.size-text2x1').innerText;
+                    total += parseInt(priceText);
+                });
+
+
+                const totalElement = document.querySelector('.section__total-row h5');
+                if (totalElement) totalElement.innerText = total + " Kč";
+            }
+        });
+    </script>
 
 </body>
 </html>

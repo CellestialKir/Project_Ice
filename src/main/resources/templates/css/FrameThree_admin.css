@@ -60,10 +60,6 @@
     }
 }
 
-.section__quantity-symbol--increment{
-    padding-left: 14px;
-}
-
 .section__quantity-stack{
     margin-right: 10px;
 }
@@ -159,4 +155,8 @@
 
 .modal-body{
     margin-bottom: 70px;
+}
+
+.section__quantity-row{
+    max-width: 448px;
 }

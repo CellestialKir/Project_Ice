@@ -25,6 +25,7 @@ public class SecurityConfig {
                         .requestMatchers("/uploads/**").permitAll()
                         .requestMatchers("/css/**").permitAll()
                         .requestMatchers("/public/**").permitAll()
+                        .requestMatchers("/delete/**").authenticated()
                         .anyRequest().permitAll()
                 )
                 .formLogin(form -> form

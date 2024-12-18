@@ -15,6 +15,10 @@
     margin-bottom: 66px;
 }
 
+.margin-bottom {
+    padding-right:50px ;
+}
+
 .stackview {
     height: 806px;
     margin-top: -2px;

@@ -5,12 +5,145 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d2db2d3-2fe5-4196-b5f8-0eb1387a6212" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/CartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/HistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/css/tableFrame.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/public/images/@img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/public/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/tableFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql's.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sql's.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/CustomAuthenticationSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/CustomAuthenticationSuccessHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/PasswordHasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/PasswordHasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/ProjectIceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/ProjectIceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/CategoryRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/CategoryRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/HistoryREpository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/HistoryREpository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/TaskRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/TaskRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/FrameOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/FrameOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/FrameThree_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/FrameThree_admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/FrameTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/FrameTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameOne.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameTwo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/bootstrap-5.3.3-dist/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task-form-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/task-form-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/task-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/project_ice/ProjectIceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/project_ice/ProjectIceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/entity/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/entity/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/HistoryREpository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/HistoryREpository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/FrameOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/FrameOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/FrameThree_admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/FrameThree_admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/FrameTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/FrameTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameOne.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameThree.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameThree.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameThree_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameThree_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameTwo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/bootstrap-5.3.3-dist/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/task-form-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/task-form-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/task-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/task-form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +166,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -45,35 +181,47 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2po6bh5ci6VY3MNOCvmINtxhfxI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectIceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Рабочий стол/Предметы муит/Final2024/Project_Ice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectIceApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/User/Desktop/Project_Ice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\project java\Project_ice\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.project_ice.controllers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ProjectIceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -83,6 +231,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -100,6 +255,10 @@
       <workItem from="1733657087883" duration="7700000" />
       <workItem from="1733727075433" duration="12981000" />
       <workItem from="1734074837378" duration="4846000" />
+      <workItem from="1734086404808" duration="10536000" />
+      <workItem from="1734182199073" duration="120000" />
+      <workItem from="1734186500251" duration="10306000" />
+      <workItem from="1734373897477" duration="7438000" />
     </task>
     <servers />
   </component>
@@ -116,5 +275,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

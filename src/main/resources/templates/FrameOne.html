@@ -14,12 +14,12 @@
         alt="Logo"
         src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
         style="width: 0px; height: 0px; display: none" />
-    <link rel="stylesheet" type="text/css" href="./css/index.css" />
-    <link rel="stylesheet" type="text/css" href="/css/font.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/components.css" />
-    <link rel="stylesheet" type="text/css" href="./css/FrameOne.css" />
-    <link rel="stylesheet" href="css/bootstrap-5.3.3-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/font.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/components.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/FrameOne.css}" />
+    <link rel="stylesheet" th:href="@{css/bootstrap-5.3.3-dist/css/bootstrap.css}" />
     
 </head>
 
@@ -43,20 +43,20 @@
             <div class="header__nav-row">
                 <ul class="header__nav-menu">
                     <li>
-                        <a href="#" class="menu-item">
+                        <a th:href="@{/FrameOne}" class="menu-item">
                         <p style="font-family: Darker Grotesque" class="header__menu-item ui text size-textxl">Menu</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="menu-item">
+                        <a th:href="@{/cart}" class="menu-item">
                         <p style="font-family: Darker Grotesque" class="ui text size-textxl">Your cart</p>
                         </a>
                     </li>
 
                     <li class=""> 
                         <a th:href="@{/profile}" class="menu-item">
-                        <p style="font-family: Darker Grotesque" class="ui text size-textxl" >Profile</p>
+                        <p style="font-family: Darker Grotesque" class="ui text size-textxl">Profile</p>
                         </a>
                     </li>
                 </ul>
@@ -80,7 +80,8 @@
                             <p class="product-details__stock-quantity ui text size-text3x1" th:text="'In stock: ' + ${product.availableAmount}"></p>
                             <p class="product-details__price ui text size-textxl" th:text="${product.price} + ' Kč'"></p>
                         </div>
-                        <button class="product-details__add-button ui button lime_300_f9 size-xl fill round">Add to order</button>
+                    <a class="product-details__add-button ui button lime_300_f9 size-xl fill round add-to-cart-button" th:href="@{'/addToCartOne/' + ${product.id}}">Add to order</a>
+                    <br>
                 </div>
             </div>
         </div>
@@ -129,7 +130,10 @@
           <hr class="visible-xs">
           <div class="text-center">&copy; 2035 by Gelato. Powered and secured by Wix</div>
         </div>
-      </footer>
+    </footer>
+    </div>
+    </div>
+<!--        <script th:src="/templates/css/bootstrap-5.3.3-dist/js/add-to-cart.js"></script>-->
 
 </body>
 </html>

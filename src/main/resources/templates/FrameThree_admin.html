@@ -2,15 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="utf-8"/>
-        <title>Your Cart</title>
+        <title>Admin tab</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="theme-color" content="#000000"/>
         <meta name="description"/>
-        <img
-            alt="Logo"
-            src="https://appproject.dhiwise.com/dhiwise-logo.png?c=&v="
-            style="width: 0px; height: 0px; display: none"
-        />
         
         <link rel="stylesheet" type="text/css" href="./css/index.css"/>
         <link rel="stylesheet" type="text/css" href="./css/font.css"/>
@@ -34,7 +29,9 @@
 
                 <div class="header__user-row logout_btn">
                     <img src="public/images/user_ico.png" alt="User Icon" class="header__user-icon"/>
-                    <p style="font-family: Comic Neue;" class="ui text size-textlg">Log in/Log out</p>
+                    <form th:action="@{/logout}" method="post">
+                        <button style="font-family: Comic Neue;" class="ui text size-textlg" type="submit">Log in/Log out</button>
+                    </form>
                 </div>
             </div>
         </header>
@@ -65,20 +62,15 @@
                                                 <div class="section__price-row">
                                                     <div class="section__quantity-row">
                                                         <div class="section__quantity-stack">
-                                                            <div class="section__quantity-view--decrement">
-                                                                <form>
-                                                                    <button type="submit" class="section__quantity-symbol--decrement ui text size-text3x1">-</button>
-                                                                </form>
-
-                                                            </div>
+                                                            <a th:href="@{|/admin/decrement/${ice.id}|}" class="section__quantity-view--decrement">
+                                                                <div class="section__quantity-symbol--decrement ui text size-text3x1">-</div>
+                                                            </a>
                                                         </div>
                                                         <p class="section__quantity-number ui text size-textlg" th:text="${ice.availableAmount}"></p>
                                                         <div class="section__quantity-stack--increment">
-                                                            <div class="section__quantity-view--increment">
-                                                                <form>
-                                                                    <button type="submit" class="section__quantity-symbol--increment ui text size-text3x1">+</button>
-                                                                </form>
-                                                            </div>
+                                                            <a th:href="@{|/admin/increment/${ice.id}|}" class="section__quantity-view--increment">
+                                                                    <div class="section__quantity-symbol--increment ui text size-text3x1">+</div>
+                                                            </a>
                                                         </div>
                                                     </div>
                                                     <p class="section__description ui text size-text2x1" th:text="${ice.price} + 'Kč'"></p>
@@ -105,13 +97,13 @@
                             <div>
                                 <div class="section__delivery-row">
                                     
-                                    <form class="refresh ui text size-text2x1">
-                                        <button type="submit">Show history</button>
-                                    </form>
+                                    <a th:href="@{/admin/history}" class="refresh ui text size-text2x1">
+                                        <div>Show history</div>
+                                    </a>
 
-                                    <form class="add ui text size-text2x1">
-                                        <button type="submit">Add new ice cream</button>
-                                    </form>
+                                    <div class="add ui text size-text2x1">
+                                        <button type="button" data-bs-toggle="modal" data-bs-target="#addModal">Add new ice cream</button>
+                                    </div>
                                     
                                     <div class="section__delivery-line--home"></div>
                                 </div>
@@ -224,6 +216,58 @@
 
 
 
+
+    <!-- Modal ADD-->
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <form th:action="@{admin/add}" method="post" th:object="${n_product}" enctype="multipart/form-data">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ADDModalLabel">Edit ice cream
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="section__image modal-img">
+
+                            <input type="file" name="photo2" accept="image/*" id="input__file2" class="input input__file"/>
+
+                            <label for="input__file2" class="input__file-button">
+                                <span class="input__file-button-text">Выберите файл</span>
+                            </label>
+
+                        </div>
+
+                        <div class="modal-main">
+                            <div class="section__details">
+                                <div class="section__details-row">
+                                    <div class="section__details-column">
+                                        <input type="text" class="section__name form-control ui text size-text3x1" th:field="*{name}">
+                                        <input type="text" class="section__description form-control ui text size-textlg" th:field="*{description}">
+                                    </div>
+                                    <div class="section__price-row modal__section__price-row">
+                                        <div class="section__quantity-row">
+                                            <input style="width: 100px;" type="number" th:field="*{availableAmount}" class="section__quantity-number form-control ui text size-text2x1">
+                                        </div>
+                                        <input type="number" class="section__quantity-number form-control ui text size-text2x1" th:field="*{price}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
     <script>
         const editModal = document.getElementById('editModal');
         editModal.addEventListener('show.bs.modal', function (event) {
@@ -236,7 +280,6 @@
             const availableAmount = button.getAttribute('data-availableAmount');
             const price = button.getAttribute('data-price');
 
-            // Установка значений в модальное окно
             document.getElementById('modalProductId').value = id;
             document.getElementById('modalProductImage').src = image;
             document.getElementById('modalProductName').value = name;
@@ -254,6 +297,20 @@
 
     <script>
         let inputs = document.querySelectorAll('.input__file');
+        Array.prototype.forEach.call(inputs, function (input) {
+            let label = input.nextElementSibling,
+                labelVal = label.querySelector('.input__file-button-text').innerText;
+
+            input.addEventListener('change', function (e) {
+                label.querySelector('.input__file-button-text').innerText = 'Файл выбран';
+            });
+
+            input.addEventListener
+        });
+    </script>
+
+    <script>
+        let inputs = document.querySelectorAll('.input__file2');
         Array.prototype.forEach.call(inputs, function (input) {
             let label = input.nextElementSibling,
                 labelVal = label.querySelector('.input__file-button-text').innerText;

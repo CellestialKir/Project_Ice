@@ -18,13 +18,9 @@ public class Cart {
 
     private int total;
 
-    @ManyToMany
-    @JoinTable(
-            name = "cart_products",
-            joinColumns = @JoinColumn(name = "cart_id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id")
-    )
-    private List<Product> products;
+    @ManyToOne
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
 
     private int numberOfProducts;
 
@@ -35,7 +31,6 @@ public class Cart {
         this.id = id;
         this.user = user;
         this.total = total;
-        this.products = products;
         this.numberOfProducts = numberOfProducts;
     }
 
@@ -63,12 +58,12 @@ public class Cart {
         this.total = total;
     }
 
-    public List<Product> getProducts() {
-        return products;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public int getNumberOfProducts() {

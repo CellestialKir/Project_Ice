@@ -19,13 +19,9 @@ public class History {
 
     private int total;
 
-    @ManyToMany
-    @JoinTable(
-            name = "history_products",
-            joinColumns = @JoinColumn(name = "history_id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id")
-    )
-    private List<Product> products;
+    @ManyToOne
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
 
     private int numberOfProducts;
 
@@ -34,11 +30,19 @@ public class History {
     public History() {
     }
 
-    public History(Long id, User user, int total, List<Product> products, int numberOfProducts, LocalDate date) {
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+    public History(Long id, User user, int total, Product product, int numberOfProducts, LocalDate date) {
         this.id = id;
         this.user = user;
         this.total = total;
-        this.products = products;
+        this.product = product;
         this.numberOfProducts = numberOfProducts;
         this.date = date;
     }
@@ -65,14 +69,6 @@ public class History {
 
     public void setTotal(int total) {
         this.total = total;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
     }
 
     public int getNumberOfProducts() {

@@ -47,28 +47,28 @@ public class CartController {
         return "FrameTwo";
     }
 
-//    public ResponseEntity<String> addToCart(@RequestBody Map<String, Long> request) {
-//        Long productId = request.get("productId");
-//        if (productId == null) {
-//            return ResponseEntity.badRequest().body("Invalid product id");
-//        }
-//        cartService.addProductToCart(productId);
-//        return ResponseEntity.ok("Product added to the cart");
-//    }
+    @GetMapping("/addOne/{productID}")
+    public String addOne(@PathVariable("productID") Long prodID, Model model){
+        Cart row = cartRepository.getById(prodID);
+        row.setNumberOfProducts(row.getNumberOfProducts() + 1);
+        row.setTotal(row.getTotal() + row.getProduct().getPrice());
+        cartRepository.save(row);
+        return "redirect:/cart";
+    }
 
-
-
-//    @GetMapping("/addToCart/{productId}")
-//    public String addToCart(@PathVariable(name = "productId") Long productId, Model model) {
-//        cartService.addProductToCart(productId);
-//        model.addAttribute("cart", cart);
-//        return "redirect:/cart"; // Redirects to the viewCart page after adding a product
-//    }
+    @GetMapping("/dellOne/{productID}")
+    public String dellOne(@PathVariable("productID") Long prodID, Model model){
+        Cart row = cartRepository.getById(prodID);
+        row.setNumberOfProducts(row.getNumberOfProducts() - 1);
+        row.setTotal(row.getTotal() - row.getProduct().getPrice());
+        cartRepository.save(row);
+        return "redirect:/cart";
+    }
 
     @GetMapping("/addToCartOne/{productId}")
     public String addToCartOne(@PathVariable(name = "productId") Long productId, Model model) {
         cartService.addProductToCart(productId);
-        return "redirect:/FrameOne"; // Redirects to the viewCart page after adding a product
+        return "redirect:/FrameOne";
     }
 
 

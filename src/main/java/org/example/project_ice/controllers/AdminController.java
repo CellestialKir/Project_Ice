@@ -4,7 +4,6 @@ import org.example.project_ice.Category;
 import org.example.project_ice.NotificationService;
 import org.example.project_ice.entity.History;
 import org.example.project_ice.entity.Product;
-import org.example.project_ice.entity.Task;
 import org.example.project_ice.entity.User;
 import org.example.project_ice.repository.*;
 import org.example.project_ice.services.HistoryService;
@@ -57,35 +56,7 @@ public class AdminController {
                                  @RequestParam(value = "search", required = false) String search,
                                  Model model) {
 
-//        int pageSize = 10;
-//        Page<Task> tasksPage;
-//        Pageable pageable;
-//
-//        if (sort != null && !sort.isEmpty()) {
-//            Sort sortOption = Sort.by("dueDate");
-//            sortOption = "desc".equals(sort) ? sortOption.descending() : sortOption.ascending();
-//            pageable = PageRequest.of(page, pageSize, sortOption);
-//        } else {
-//            pageable = PageRequest.of(page, pageSize);
-//        }
-//
-//        if (category != null) {
-//            Optional<Category> cate = categoryRepo.findById(category);
-//            tasksPage = taskRepo.findByCategory(cate.get(), pageable);
-//        } else if (status != null && !status.isEmpty()) {
-//            tasksPage = taskRepo.findByStatus(status, pageable);
-//        }  else if (search != null && !search.isEmpty()) {
-//            tasksPage = taskRepo.findByTitleContaining(search, pageable);
-//        }
-//        else {
-//            tasksPage = taskRepo.findAll(pageable);
-//        }
-//
-//        model.addAttribute("users", userRepo.findAll());
-//        model.addAttribute("tasks", tasksPage.getContent());
-//        model.addAttribute("categories", categoryRepo.findAll());
-//        model.addAttribute("currentPage", page);
-//        model.addAttribute("totalPages", tasksPage.getTotalPages()); // Total number of pages
+
         Sort sortOption = Sort.by("id");
         sortOption.ascending();
         model.addAttribute("ice_creams", prodrepo.findAll(sortOption));

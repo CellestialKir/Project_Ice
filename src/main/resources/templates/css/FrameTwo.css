@@ -176,8 +176,9 @@
     height: max-content;
     width: max-content;
     margin: auto;
+    margin-bottom: 25px;
     line-height: 5px;
-    padding-bottom: 12px;
+    padding: 0 !important;
     @media only screen and (max-width: 1050px) {font-size: 32px;}
     @media only screen and (max-width: 550px) {font-size: 26px;}
 }
@@ -192,6 +193,7 @@
 }
 
 .section__quantity-stack--increment {
+    padding: 0 !important;
     height: 74px;
     padding-left: var(--space-md);
     padding-right: var(--space-md);
@@ -200,6 +202,7 @@
 }
 
 .section__quantity-view--increment{
+    padding: 0 !important;
     height: 46px;
     background-color: var(--blue_gray_100);
     width: 46px;
@@ -207,7 +210,6 @@
     left: 20px;
     bottom: 0px;
     top: 0px;
-    padding: auto;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: var(--radius-xs);
@@ -222,13 +224,11 @@
 .section__quantity-symbol--increment{
     font-family: Darker Grotesque !important;
     text-align: center;
-    padding: auto;
-    
+    padding: 0 !important;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     height: max-content;
     line-height: 5px;
-    padding-top: 13px ;
     @media only screen and (max-width: 1050px) { font-size: 32px;}
     @media only screen and (max-width: 550px) { font-size: 26px;}
 }

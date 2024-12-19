@@ -92,16 +92,21 @@
                                                 <div class="section__price-row">
                                                     <div class="section__quantity-row">
                                                         <div class="section__quantity-stack">
-                                                            <div class="section__quantity-view--decrement" data-action="decrement">
-                                                                <p class="section__quantity-symbol--decrement ui text size-text3x1">-</p>
-                                                            </div>
+                                                            <form th:action="@{/dellOne/{productID}(productID=${product.id})}">
+                                                                <button class="section__quantity-view--decrement" data-action="decrement">
+                                                                    <p class="section__quantity-symbol--decrement ui text size-text3x1">-</p>
+                                                                </button>
+                                                            </form>
                                                         </div>
 
                                                         <p class="section__quantity-number ui text size-textlg" th:text="${product.numberOfProducts}" data-quantity="number">1</p>
                                                         <div class="section__quantity-stack--increment" data-action="increment">
-                                                            <div class="section__quantity-view--increment"  >
-                                                                <p class="section__quantity-symbol--increment ui text size-text3x1">+</p>
-                                                            </div>
+                                                            <form th:action="@{/addOne/{productID}(productID=${product.id})}">
+                                                                <button class="section__quantity-view--increment"  >
+                                                                    <p class="section__quantity-symbol--increment ui text size-text3x1">+</p>
+                                                                </button>
+                                                            </form>
+
                                                         </div>
                                                     </div>
                                                     <p class="section__description ui text size-text2x1 margin-bottom" th:text="${product.total} + 'Kč'" th:data-price="${product.product.price}"></p>
@@ -148,10 +153,10 @@
                                     <h4 class="ui heading size-headinglg">Total</h4>
                                     <h5 class="ui heading size-headingmd" th:text="${fullTotal} + 'Kč'"></h5>
                                 </div>
-                                <div class="section__order-stack">
+                                <a th:href="@{/addToHistory}" class="section__order-stack">
                                     <div class="section__order-view"></div>
                                     <h6 class="section__order-text ui heading size-headinglg">Order</h6>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 package org.example.project_ice.services;
 
 import org.example.project_ice.entity.History;
+import org.example.project_ice.entity.Product;
+import org.example.project_ice.entity.User;
 import org.example.project_ice.repository.HistoryREpository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -56,5 +58,19 @@ public class HistoryService {
 
         return histories;
     }
+
+    public List<History> findByDate() {    return histRepo.findAllByOrderByDateDesc();
+    }
+    public void save(History history) {    histRepo.save(history);
+    }
+    public List<History> getHistoryByUser(String username) {    return histRepo.findAllByUser_Username(username);
+    }
+    public void addToHistory(User user, Product product, int quantity) {
+        int total = product.getPrice() * quantity;
+        History history = new History();
+        history.setUser(user);    history.setProduct(product);
+        history.setNumberOfProducts(quantity);    history.setTotal(total);
+        history.setDate(LocalDate.now());
+        histRepo.save(history);}
 
 }

@@ -160,3 +160,7 @@
 .section__quantity-row{
     max-width: 448px;
 }
+
+.section__quantity-symbol--increment{
+    margin-top: 15px;
+}

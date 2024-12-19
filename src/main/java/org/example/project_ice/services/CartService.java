@@ -82,4 +82,8 @@ public class CartService {
         cartRepository.save(cart);
     }
 
+    public void delete(Cart cart){
+        cartRepository.delete(cart);
+    }
+
 }

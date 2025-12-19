@@ -77,6 +77,11 @@
     @media only screen and (max-width: 550px) { font-size: 28px;}
 }
 
+.ice_img{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
 
 .product-details__add-button {
     color: var(--black_900) !important;
@@ -227,4 +232,186 @@
 .product-details__add-button:hover{
     background-color: rgba(175, 155, 98, 0.98) !important;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main.container {
+    max-width: 1100px;
+}
+
+h1 {
+    font-family: "Days One", sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+}
+
+.card h2 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+}
+
+
+label {
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    border-color: #b8e986;
+    box-shadow: 0 0 0 0.15rem rgba(184, 233, 134, 0.4);
+}
+
+input[readonly] {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+
+.ui.button {
+    border-radius: 30px;
+    padding: 12px 32px !important;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 18px;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.ui.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+img.rounded {
+    border-radius: 16px !important;
+    object-fit: cover;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.panel-footer {
+    background-color: #111;
+    color: #eee;
+    padding: 40px 0;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.panel-footer span {
+    font-weight: 600;
+    color: #b8e986;
+}
+
+.panel-footer section {
+    margin-bottom: 20px;
+}
+
+.panel-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+}
+
+.panel-footer a:hover {
+    opacity: 0.7;
+}
+
+#social {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#foot_img_inst {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#foot_text {
+    font-size: 14px;
+}
+
+.panel-footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.panel-footer .text-center {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width: 992px) {
+    main.container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .card {
+        padding: 24px !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .ui.button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    img.rounded {
+        width: 120px;
+        height: 160px;
+    }
+
+    .panel-footer {
+        text-align: center;
+    }
+
+    .panel-footer a {
+        justify-content: center;
+    }
 }

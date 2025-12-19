@@ -2,8 +2,11 @@
     font-family: Darker Grotesque !important;
     border-radius: 10px;
     padding: 0px 1%;
+    text-align: center;
     @media only screen and (max-width: 1050px) { font-size: 34px;}
     @media only screen and (max-width: 550px) {font-size: 32px;}
+    width: 48% !important;
+    font-size: 40px !important;
 }
 
 .section__delivery-method--pickup:hover{
@@ -70,8 +73,6 @@
     margin-left: 10px;
     background-color: var(--gray_100_01);
     box-shadow: var (--shadow-md);
-    padding: 6px;
-    padding-top: 12px;
     border-radius: var(--radius-1g);
     box-shadow: var(--shadow-xs);
     border-radius: var(--radius-xs);
@@ -97,9 +98,16 @@
 
 .section__details-row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     @media only screen and (max-width: 1050px) {flex-direction: column;}
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
 }
 
 .section__details-column {
@@ -108,6 +116,43 @@
     flex-direction: column;
     align-items: flex-start;
 }
+
+.section__quantity-row{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+.section__quantity-stack,
+.section__quantity-stack--increment{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--lime_300_f9);
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+}
+section__quantity-symbol--decrement{
+    line-height: 5px;
+}
+.section__quantity-view--decrement,
+.section__quantity-view--increment{
+    width: 50px !important;
+}
+
+.section__quantity-symbol--decrement{
+    line-height: 5px !important;
+    font-size: 40px ;
+    margin-bottom: 3px !important;
+}
+
+
 
 .section__name {
     font-family: Comic Neue !important;
@@ -123,9 +168,9 @@
 
 .section__price-row {
     margin-bottom: 10px;
-    padding-left: 56px;
-    padding-right: 56px;
-    flex: 1;
+    /*padding-left: 56px;*/
+    /*padding-right: 56px;*/
+    /*flex: 1;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,98 +185,20 @@
         padding-right: var(--space-sm);}
 }
 
-.section__quantity-row {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media only screen and (max-width: 550px) { align-self: stretch;}
-}
 
-.section__quantity-stack {
-    height: 74px;
-    width: 12%;
-    position: relative;
-}
-.section__quantity-view--decrement {
-    height: 46px;
-    background-color: var(--blue_gray_100);
-    width: 46px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    top: 0px;
-    margin: auto;
-    border-radius: var(--radius-xs);
-}
 
-.section__quantity-symbol--decrement {
-    font-family: Darker Grotesque !important;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    top: 0px;
-    height: max-content;
-    width: max-content;
-    margin: auto;
-    margin-bottom: 25px;
-    line-height: 5px;
-    padding: 0 !important;
-    @media only screen and (max-width: 1050px) {font-size: 32px;}
-    @media only screen and (max-width: 550px) {font-size: 26px;}
-}
 
-.section__quantity-number {
-    margin-left: 18px;
-    line-height: 5px;
-    padding-bottom: 8px;
-    font-family: Darker Grotesque !important;
-    @media only screen and (max-width: 1050px) { font-size: 26px;}
-    @media only screen and (max-width: 550px) { font-size: 24px;}
-}
 
-.section__quantity-stack--increment {
-    padding: 0 !important;
-    height: 74px;
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
-    /* flex: 1; */
-    position: relative;
-}
 
-.section__quantity-view--increment{
-    padding: 0 !important;
-    height: 46px;
-    background-color: var(--blue_gray_100);
-    width: 46px;
-    position: absolute;
-    left: 20px;
-    bottom: 0px;
-    top: 0px;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: var(--radius-xs);
-}
 
-.section__quantity-view--decrement:hover,
-.section__quantity-view--increment:hover{
+
+
+.section__quantity-stack:hover,
+.section__quantity-stack--increment:hover{
     background-color: rgb(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
-.section__quantity-symbol--increment{
-    font-family: Darker Grotesque !important;
-    text-align: center;
-    padding: 0 !important;
-    margin-top: auto;
-    margin-bottom: 10px;
-    height: max-content;
-    line-height: 5px;
-    @media only screen and (max-width: 1050px) { font-size: 32px;}
-    @media only screen and (max-width: 550px) { font-size: 26px;}
-}
 
 .section__delivery-row {
     margin-left: 10px;
@@ -253,8 +220,8 @@
 }
 
 .section__delivery-options {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 3%;
+    margin-right: 3%;
     align-self: stretch;
     display: flex;
     justify-content: center;
@@ -267,7 +234,7 @@
 }
 
 .section__delivery-option-row--home {
-    gap: 15%;
+    justify-content: space-between;
     width: 100%;
     display: flex;
     align-items: center;
@@ -445,4 +412,95 @@
     width: 100%;
     margin-bottom: 50px;
     clear: both;
+}
+
+
+
+
+.panel-footer {
+    background-color: #111;
+    color: #eee;
+    padding: 40px 0;
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+.panel-footer span {
+    font-weight: 600;
+    color: #b8e986;
+}
+
+.panel-footer section {
+    margin-bottom: 20px;
+}
+
+.panel-footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #eee;
+    margin-bottom: 10px;
+    transition: opacity 0.2s;
+}
+
+.panel-footer a:hover {
+    opacity: 0.7;
+}
+
+#social {
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+#foot_img_inst {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#foot_text {
+    font-size: 14px;
+}
+
+.panel-footer hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.panel-footer .text-center {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+/* ===================== MEDIA ===================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    main.container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .card {
+        padding: 24px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    img.rounded {
+        width: 120px;
+        height: 160px;
+    }
+
+    .panel-footer {
+        text-align: center;
+    }
+
+    .panel-footer a {
+        justify-content: center;
+    }
 }

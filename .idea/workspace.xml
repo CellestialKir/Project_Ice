@@ -5,41 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d2db2d3-2fe5-4196-b5f8-0eb1387a6212" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f55dd69-b387-4e88-855e-9ca16c11692f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f55dd69-b387-4e88-855e-9ca16c11692f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/controllers/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/HistoryREpository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/HistoryREpository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/TaskRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/UserRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/repository/UserRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/project_ice/services/HistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/FrameTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/FrameTwo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree_admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameThree_admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameOne.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/FrameTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/FrameTwo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task-form-admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/tasks.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/HistoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/HistoryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/controllers/TaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/entity/Task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/HistoryREpository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/HistoryREpository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/TaskRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/UserRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/repository/UserRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/CartService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/project_ice/services/HistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/FrameTwo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/FrameTwo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameOne.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameOne.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/css/FrameTwo.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/css/FrameTwo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/task-form-admin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/task-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/tasks.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +45,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -131,7 +108,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-22-openjdk-22-4caba194b151-f504ca98" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -156,6 +134,7 @@
       <workItem from="1734186500251" duration="10306000" />
       <workItem from="1734373897477" duration="7438000" />
       <workItem from="1734594910511" duration="7681000" />
+      <workItem from="1766081087444" duration="4756000" />
     </task>
     <servers />
   </component>
